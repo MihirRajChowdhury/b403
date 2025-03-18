@@ -33,7 +33,7 @@ from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv())
 GROQ_API_KEY = os.environ["groq_api_key"]
 from langchain_groq import ChatGroq;
-chatModel = ChatGroq(model_name="llama3-70b-8192")
+chatModel = ChatGroq(model_name="llama-3.1-8b-instant")
 
 prompt = ChatPromptTemplate.from_template("tell me a curious fact about {politician}")
 
